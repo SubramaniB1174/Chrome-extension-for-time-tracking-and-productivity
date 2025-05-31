@@ -1,0 +1,21 @@
+{
+  "name": "Automatic Productivity Webtime Tracker",
+  "description": "An application that track the user's web activity and record their time on apps that they deem productive or unproductive",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Automatic Productivity Webtime Tracker"
+  },
+  "icons": {
+    "16": "placeholder-logo.png",
+    "48": "placeholder-logo.png",
+    "128": "placeholder-logo.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": ["idle", "tabs", "storage", "activeTab", "nativeMessaging"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
