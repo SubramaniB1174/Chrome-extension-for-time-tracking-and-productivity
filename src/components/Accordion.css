@@ -1,0 +1,28 @@
+.accordion-title {
+    width: 100%;
+    background-color:whitesmoke;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: dimgray;
+    font-weight:bold;
+    letter-spacing: 2px;
+    padding: 5px 0 5px 0;
+}
+
+.active, .accordion-title:hover {
+    background-color: rgb(163, 163, 163);
+}
+
+.accordion-indicator {
+    float: right;
+}
+
+
+.accordion-content {
+    overflow: hidden;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,88 @@
+.historical-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.data-count {
+  background: #e5e7eb;
+  color: #374151;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.historical-content {
+  padding: 16px;
+}
+
+.date-selector {
+  margin-bottom: 16px;
+}
+
+.date-select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+}
+
+.total-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  border-left: 3px solid #10b981;
+}
+
+.total-label {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.total-value {
+  font-size: 16px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.historical-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.historical-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.historical-item:last-child {
+  border-bottom: none;
+}
+
+.historical-item .domain {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.historical-item .time {
+  font-size: 14px;
+  color: #6b7280;
+}

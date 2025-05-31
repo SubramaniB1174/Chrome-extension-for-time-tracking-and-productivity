@@ -1,0 +1,287 @@
+.todays-usage-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.usage-content {
+  padding: 20px;
+}
+
+.donut-chart-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.donut-chart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.donut-chart:hover {
+  transform: scale(1.02);
+}
+
+.donut-chart::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+}
+
+.donut-center {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.top-site {
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 4px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.percentage {
+  font-size: 24px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.category-badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-top: 4px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.category-badge.productive {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.category-badge.unproductive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.category-badge.uncategorized {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+/* Productivity Summary */
+.productivity-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.summary-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.summary-item.productive .summary-indicator {
+  background: #10b981;
+}
+
+.summary-item.unproductive .summary-indicator {
+  background: #ef4444;
+}
+
+.summary-item.uncategorized .summary-indicator {
+  background: #6b7280;
+}
+
+.summary-label {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+  flex: 1;
+}
+
+.summary-time {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.usage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.usage-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.usage-item:last-child {
+  border-bottom: none;
+}
+
+.usage-item-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.color-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.domain {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.category-tag {
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: 600;
+  min-width: 16px;
+  text-align: center;
+}
+
+.category-tag.productive {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.category-tag.unproductive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.category-tag.uncategorized {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.time {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Tooltip Styles */
+.chart-tooltip {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  animation: tooltipFadeIn 0.2s ease;
+}
+
+.tooltip-content {
+  text-align: center;
+}
+
+.tooltip-domain {
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #ffffff;
+}
+
+.tooltip-time {
+  font-size: 11px;
+  color: #e5e7eb;
+  margin-bottom: 2px;
+}
+
+.tooltip-percentage {
+  font-weight: 700;
+  font-size: 14px;
+  color: #10b981;
+  margin-bottom: 4px;
+}
+
+.tooltip-category {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.tooltip-category.productive {
+  background: #10b981;
+  color: white;
+}
+
+.tooltip-category.unproductive {
+  background: #ef4444;
+  color: white;
+}
+
+.tooltip-category.uncategorized {
+  background: #6b7280;
+  color: white;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects for usage items */
+.usage-item:hover {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 0 -12px;
+}
+
+.usage-item:hover .color-indicator {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
