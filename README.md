@@ -46,4 +46,6 @@ Tooling: pnpm, ESLint, Prettier
 Data Handling: Local storage or browser-based tracking (extension integration likely)
 
 # output
-
+<img width="1296" alt="Image" src="https://github.com/user-attachments/assets/3847b60a-f457-4b44-955a-a576668aae2a" />
+<img width="1296" alt="Image" src="https://github.com/user-attachments/assets/f546c2a8-b43b-4b7a-be3f-bf21f5f9ce2a" />
+<img width="1296" alt="Image" src="https://github.com/user-attachments/assets/edc12824-e7c6-49ca-9f7e-bb3c3a399745" />
